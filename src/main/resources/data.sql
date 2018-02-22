@@ -1,0 +1,59 @@
+CREATE DATABASE  IF NOT EXISTS `mdhyani` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `mdhyani`;
+-- MySQL dump 10.13  Distrib 5.6.24, for Win32 (x86)
+--
+-- Host: localhost    Database: mdhyani
+-- ------------------------------------------------------
+-- Server version	5.5.16
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `expense`
+--
+
+LOCK TABLES `expense` WRITE;
+/*!40000 ALTER TABLE `expense` DISABLE KEYS */;
+INSERT INTO `expense` VALUES (1,'grocery','vegetables, fruits','2018-02-22 09:22:28','2018-02-22 09:22:28',1,700),(2,'mobile bill','vodafone mobile bill','2018-02-22 09:25:42','2018-02-22 09:25:42',2,400),(3,'maid fees','maid fees','2018-02-22 11:07:10','2018-02-22 11:07:10',2,1500);
+/*!40000 ALTER TABLE `expense` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'2018-01-03 10:58:59','John','Doe','2018-01-03 10:58:59',1),(2,'2018-01-03 10:59:16','Mayank','Dhyani','2018-01-03 10:59:16',2),(3,'2018-01-05 12:50:18','Andrew','Brown','2018-01-05 12:50:18',3),(5,'2018-01-05 13:09:27','Samual','Jones','2018-02-16 11:11:47',5);
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `user_address`
+--
+
+LOCK TABLES `user_address` WRITE;
+/*!40000 ALTER TABLE `user_address` DISABLE KEYS */;
+INSERT INTO `user_address` VALUES (1,'Noida','India','UP',201301),(2,'Noida','India','UP',201301),(3,'Noida','India','UP',201301),(5,'New Jersey','USA','California',113456),(6,'New Jersey','USA','California',113456),(7,'New Jersey','USA','California',113456);
+/*!40000 ALTER TABLE `user_address` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-02-22 16:49:06
